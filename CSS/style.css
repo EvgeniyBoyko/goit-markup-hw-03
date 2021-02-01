@@ -237,8 +237,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   
-  margin-left: 280px;
-  margin-right: 279px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 94px;
   /* margin-bottom: 34px; */
 
@@ -257,13 +257,12 @@ ul {
 }
 
 .section .portfolio-section {
-  width: 1px;
+  width: 1170px;
   height: 1360px;
   left: 215px;
   top: 174px;
-  margin-left: 215px;
-
-  border: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section .filter {
