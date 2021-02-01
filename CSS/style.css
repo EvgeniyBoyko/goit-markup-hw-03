@@ -200,7 +200,8 @@ ul {
 
 /* Подвал */
 .footer-page {
-  background-color: var(--foter-bg-color);
+  background-color: var(--footer-bg-color);
+  text-decoration: none;
 }
 
 .footer-page .link {
@@ -243,6 +244,9 @@ ul {
 }
 
 /* Список фильтра */
+
+.filter-box {
+}
 
 .section .section-title.filter-page {
   font-size: 18px;
