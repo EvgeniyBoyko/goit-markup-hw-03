@@ -32,33 +32,34 @@ h4 {
 ul {
   list-style: none;
 }
-/* Шапка */
+/* =================Header================= */
 
 .page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--text-wite-color);
-  width: 1600px;
 }
-/* logo */
+
+/* =================END Header================= */
+
+/* ===================logo================ */
+
 .logo {
   color: var(--text-accent);
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
-  margin-left: ;
 }
 
 .logo-color {
   color: var(--text-black-color);
 }
+
+/* ===================END logo================ */
 
 .nav-header {
   display: flex;
@@ -69,21 +70,24 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  display: inline-flex;
-  width: 1170px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-left: 15px;
   padding-right: 15px;
+  padding-left: 15px;
 }
 
-/* навигация */
-
-.site-nav {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1200px;
+}
+
+/* =====================NAVIGATION=============== */
+
+.nav-header {
+  display: flex;
+}
+.site-nav {
+  display: flex;
   margin-left: 90px;
 }
 
@@ -92,13 +96,16 @@ ul {
   color: var(--text-accent);
 }
 
-.nav-item {
+.site-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-nav .link {
-  color: var(--text-black-color);
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+  color: var(--text-black-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -108,12 +115,16 @@ ul {
   color: var(--text-accent);
 }
 
-/* вторичная навигация */
+/* =====================END NAVIGATION=============== */
+
+/* =====================Second NAVIGATION=============== */
 
 .second-nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.second-nav .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .second-nav .link {
@@ -131,7 +142,10 @@ ul {
   color: var(--text-accent);
 }
 
-}
+/* =====================Second NAVIGATION=============== */
+
+/* =================END Header================= */
+
 /* Герой  */
 
 .hero-page .hero-title {
@@ -179,6 +193,12 @@ ul {
 
 /* Секции */
 
+/* .section {
+  width: 1600px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+} */
+
 .section .section-title,
 .section-comand .section-title {
   color: var(--text-black-color);
@@ -203,6 +223,25 @@ ul {
 
 /* Особенности */
 
+.features-text {
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.features-list {
+  margin-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.features-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section .section-title.name-page {
   font-weight: 700;
   font-size: 36px;
@@ -217,6 +256,14 @@ ul {
   text-transform: uppercase;
 }
 
+/* ================ЧЕМ ЗАНИМАЕМСЯ============== */
+
+.work-item {
+  padding-right: 30px;
+  padding-top: 50px;
+}
+
+/* ================ КОНЕЦ ЧЕМ ЗАНИМАЕМСЯ============== */
 /* Команда */
 
 .section-comand .section-title.name-page {
@@ -228,6 +275,10 @@ ul {
 
 .section-comand {
   background-color: var(--background-second-color);
+}
+
+.comand-item {
+  padding-right: 30px;
 }
 
 .section-comand .section-title.name {
@@ -269,40 +320,52 @@ ul {
   color: var(--text-accent);
 }
 
-/* Portfolio */
+.footer-content {
+  font-style: normal;
+}
+
+/* ====================Portfolio==================== */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ====================Portfolio==================== */
 
 /* filter */
 
+.portfolio-main-container {
+  /* width: 1600; */
+  outline: 1px solid red;
+  background-color: var(--text-wite-color);
+}
+
 .filter-container {
-  display: flex;
-  flex-wrap: wrap;
-  
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 94px;
-  /* margin-bottom: 34px; */
-
-  width: 611px;
-  height: 54px;
-  left: 495px;
-  top: 174px;
-}
-
-.filter-list {
-  margin left: 8px;
-  margin right: 8px;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  display: flex;
+  padding-bottom: 50px;
+  padding-top: 90px;
 }
 
-.section .portfolio-section {
-  width: 1170px;
-  height: 1360px;
-  left: 215px;
-  top: 174px;
-  margin-left: auto;
-  margin-right: auto;
+.filter-list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list .filter {
+  border: 2px solid #f5f4fa;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--background-second-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .section .filter {
@@ -328,6 +391,7 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  padding-bottom: 50px;
 }
 
 .portfolio-box {
@@ -356,3 +420,5 @@ ul {
 .section .filter-link {
   text-decoration: none;
 }
+
+/* ====================END Portfolio==================== */
