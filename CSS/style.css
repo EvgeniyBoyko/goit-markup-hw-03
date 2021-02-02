@@ -36,6 +36,7 @@ ul {
 
 .page-header {
   background-color: var(--text-wite-color);
+  width: 1600px;
 }
 /* logo */
 .logo {
@@ -51,16 +52,48 @@ ul {
   height: 31px;
   left: 215px;
   top: 24px;
+
+  margin-left: ;
 }
 
 .logo-color {
   color: var(--text-black-color);
 }
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: inline-flex;
+  width: 1170px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* навигация */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 90px;
+}
+
 .site-nav .link:focus,
 .site-nav .link:hover {
   color: var(--text-accent);
+}
+
+.nav-item {
+  margin-right: 50px;
 }
 
 .site-nav .link {
@@ -76,6 +109,13 @@ ul {
 }
 
 /* вторичная навигация */
+
+.second-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .second-nav .link {
   color: var(--text-color);
 
