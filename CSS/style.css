@@ -371,6 +371,9 @@ ul {
 .footer-page {
   background-color: var(--footer-bg-color);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-page .link {
@@ -393,11 +396,21 @@ ul {
 }
 
 .footer-content {
+  margin-top: 20px;
+
   font-style: normal;
 }
 
 .footer-container {
+  padding: 60px 0;
+  align-items: center;
+  justify-content: center;
 }
+
+.footer-list-item {
+  margin-top: 8px;
+}
+
 /* ===================END FOOTER========================== */
 
 /* ====================Portfolio==================== */
