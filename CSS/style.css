@@ -8,6 +8,10 @@
   --footer-bg-color: #2f303a;
 }
 
+img {
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +37,7 @@ h4 {
 ul {
   list-style: none;
 }
+
 /* =================Header================= */
 
 .page-header {
@@ -179,6 +184,10 @@ ul {
 
 .hero-page {
   background-color: #2f303a;
+  margin: 0% auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-page .button {
@@ -190,6 +199,13 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.hero-link {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 /* =================END HERO================  */
