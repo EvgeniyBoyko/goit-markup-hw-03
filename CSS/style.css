@@ -10,6 +10,8 @@
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 * {
@@ -36,6 +38,8 @@ h4 {
 
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* =================Header================= */
@@ -67,12 +71,6 @@ ul {
 
 /* ===================END logo================ */
 
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -91,7 +89,11 @@ ul {
 
 .nav-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
 }
+
 .site-nav {
   display: flex;
   margin-left: 90px;
@@ -164,7 +166,7 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-page .hero-link {
+.hero-page .hero-btn {
   color: var(--text-wite-color);
   font-weight: 700;
   font-size: 16px;
@@ -176,8 +178,8 @@ ul {
   background-color: var(--text-accent);
 }
 
-.hero-page .hero-link:focus,
-.hero-page .hero-link:hover {
+.hero-page .hero-btn:focus,
+.hero-page .hero-btn:hover {
   color: var(--text-black-color);
   background-color: var(--background-second-color);
 }
@@ -190,7 +192,7 @@ ul {
   text-align: center;
 }
 
-.hero-page .button {
+.hero-page .hero-btn {
   color: var(--text-wite-color);
   background-color: var(--text-accent);
   font-weight: 700;
@@ -201,11 +203,15 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.hero-link {
+.hero-btn {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  padding: 10px 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
 }
 
 /* =================END HERO================  */
@@ -249,44 +255,56 @@ ul {
 /* =====================FEARURES================ */
 
 .features-item:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 48px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 90px;
+  margin-right: -30px;
 }
 
 .features-item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .features-text {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* =====================FEARURES================ */
 
 /* ================ЧЕМ ЗАНИМАЕМСЯ============== */
 
-.container .section-title.name-page {
-  padding-top: 90px;
-  padding-bottom: 50px;
+.section-work .section-title.name-page {
+  margin-bottom: 50px;
+}
+
+.section-work {
+  padding-top: 48px;
+  padding-bottom: 94px;
 }
 
 .work-title {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-right: -30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-title > .work-item {
-  flex-basis: calc(100% / 3);
-  padding-bottom: 90px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .work-title > .work-item:not(:last-child) {
-  padding-right: 20px;
+  margin-right: 30px;
 }
 
 /* ================ КОНЕЦ ЧЕМ ЗАНИМАЕМСЯ============== */
