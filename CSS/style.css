@@ -285,7 +285,9 @@ ul {
   margin-top: 10px;
 }
 
-.features-fone-container {
+.features-item:before {
+  content: '';
+  display: block;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -294,19 +296,19 @@ ul {
   height: 120px;
 }
 
-.bgf-img1 {
+.bgf-img1::before {
   background-image: url(../images/features/bg1.svg);
 }
 
-.bgf-img2 {
+.bgf-img2::before {
   background-image: url(../images/features/bg2.svg);
 }
 
-.bgf-img3 {
+.bgf-img3::before {
   background-image: url(../images/features/bg3.svg);
 }
 
-.bgf-img4 {
+.bgf-img4::before {
   background-image: url(../images/features/bg4.svg);
 }
 
@@ -439,7 +441,7 @@ ul {
   width: 270px;
   padding: 60px 0;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .footer-list-item {
