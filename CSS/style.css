@@ -6,7 +6,7 @@
   --text-background-color: #e5e5e5;
   --background-second-color: #f5f4fa;
   --footer-bg-color: #2f303a;
-  --border-: border: 1px solid #EEEEEE;
+  --border-: 1px solid #eeeeee;
 }
 
 img {
@@ -285,12 +285,29 @@ ul {
   margin-top: 10px;
 }
 
-.features-fone-container::before {
-  content: '';
-  display: block;
+.features-fone-container {
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--background-second-color);
   width: 270px;
   height: 120px;
+}
+
+.bgf-img1 {
+  background-image: url(../images/features/bg1.svg);
+}
+
+.bgf-img2 {
+  background-image: url(../images/features/bg2.svg);
+}
+
+.bgf-img3 {
+  background-image: url(../images/features/bg3.svg);
+}
+
+.bgf-img4 {
+  background-image: url(../images/features/bg4.svg);
 }
 
 /* =====================FEARURES================ */
