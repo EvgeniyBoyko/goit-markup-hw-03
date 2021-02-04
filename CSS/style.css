@@ -75,15 +75,7 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 1200px;
 }
 
 /* =====================NAVIGATION=============== */
@@ -193,7 +185,7 @@ ul {
   text-align: center;
   max-width: 1600px;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/Img-png.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,7 +284,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-second-color);
-  width: 270px;
+  /* width: 270px; */
   height: 120px;
 }
 
@@ -565,6 +557,7 @@ ul {
 
 .section .filter-link {
   text-decoration: none;
+  display: block;
 }
 
 .filter-contant-container {
