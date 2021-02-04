@@ -6,6 +6,7 @@
   --text-background-color: #e5e5e5;
   --background-second-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --border-: border: 1px solid #EEEEEE;
 }
 
 img {
@@ -20,7 +21,7 @@ img {
 }
 
 body {
-  background: var(--text-background-color);
+  background: var(--text-wite-color);
   color: var(--text-color);
 
   font-family: Roboto, sans-serif;
@@ -261,7 +262,7 @@ ul {
 
 /* =====================FEARURES================ */
 
-.features-item:not(:last-child) {
+.features-item {
   margin-left: 30px;
 }
 
@@ -282,6 +283,14 @@ ul {
 
 .features-text {
   margin-top: 10px;
+}
+
+.features-fone-container::before {
+  content: '';
+  display: block;
+  background-color: var(--background-second-color);
+  width: 270px;
+  height: 120px;
 }
 
 /* =====================FEARURES================ */
