@@ -456,6 +456,58 @@ ul {
 
 /* ======================END TEAM=================== */
 
+/* =========================== CLIENTS ========================== */
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 6) / 6);
+}
+
+.clients-img {
+  display: block;
+}
+
+.clients-logo {
+  fill: #afb1b8;
+}
+
+.clients-item:hover {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  fill: var(--text-accent);
+  border: 1px solid var(--text-accent);
+  box-sizing: border-box;
+}
+
+.clients-item:hover .clients-logo {
+  width: 170px;
+  height: 90px;
+  fill: var(--text-accent);
+}
+
+/* ======================== END CLIENTS ============================= */
+
 /* ===================FOOTER========================== */
 
 .footer-page {
