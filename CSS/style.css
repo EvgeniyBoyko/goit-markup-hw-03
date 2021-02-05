@@ -145,6 +145,13 @@ ul {
   margin-right: 10px;
 }
 
+.second-nav .second-nav-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: var(--text-color);
+  margin-right: 10px;
+}
+
 .second-nav .link:focus,
 .second-nav .link:hover {
   color: var(--text-accent);
@@ -155,6 +162,15 @@ ul {
   fill: var(--text-accent);
 }
 
+.link:focus .second-nav-smartphone,
+.link:hover .second-nav-smartphone {
+  fill: var(--text-accent);
+}
+
+.nav-item .link {
+  display: flex;
+  align-items: center;
+}
 /* =====================END Second NAVIGATION=============== */
 
 /* =================END Header================= */
