@@ -498,8 +498,7 @@ ul {
 .footer-address-container {
   width: 270px;
   padding: 60px 0;
-  align-items: center;
-  /* justify-content: space-between; */
+  align-items: flex-start;
 }
 
 .footer-list-item {
@@ -509,7 +508,8 @@ ul {
 .soshial-link-container {
   width: 270px;
   padding: 60px 0;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 70px;
 }
 
 .soshial-link-title {
@@ -519,6 +519,46 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-wite-color);
+}
+
+.soshial-link-list {
+  display: flex;
+}
+
+.soshial-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soshial-link-item {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.soshial-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soshial-link .icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--text-wite-color);
+}
+
+.soshial-link-item:hover {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.soshial-link-item:hover .network-icon {
+  fill: #ffffff;
 }
 
 /* =================== END FOOTER ========================== */
